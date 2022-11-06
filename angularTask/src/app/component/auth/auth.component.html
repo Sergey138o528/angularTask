@@ -1,0 +1,11 @@
+<form [formGroup]="authForm" (ngSubmit)="onSubmit()">
+    <div>
+      <label class="form-label">Имя</label>
+      <input class="form-control" formControlName="login">
+    </div>
+    <div>
+      <label class="form-label">Пароль</label>
+      <input class="form-control"type="password" formControlName="password">
+    </div>
+    <button type="submit" class="btn btn-primary">Вход</button>
+</form>
